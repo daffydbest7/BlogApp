@@ -15,7 +15,7 @@ export const createNewComment = async ({
     };
 
     const { data } = await axios.post(
-      "/api/comments",
+      "https://byteplay-backend.onrender.com/api/comments",
       {
         desc,
         slug,
@@ -41,7 +41,7 @@ export const updateComment = async ({ token, desc, commentId }) => {
     };
 
     const { data } = await axios.put(
-      `/api/comments/${commentId}`,
+      `https://byteplay-backend.onrender.com/api/comments/${commentId}`,
       {
         desc,
       },
@@ -63,7 +63,7 @@ export const deleteComment = async ({ token, commentId }) => {
       },
     };
 
-    const { data } = await axios.delete(`/api/comments/${commentId}`, config);
+    const { data } = await axios.delete(`https://byteplay-backend.onrender.com/api/comments/${commentId}`, config);
     return data;
   } catch (error) {
     if (error.response && error.response.data.message)

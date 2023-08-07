@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const signup = async ({name, email, password}) => {
     try {
-        const {data} = await axios.post('/api/users/register', {
+        const {data} = await axios.post('https://byteplay-backend.onrender.com/api/users/register', {
             name,
             email,
             password,
@@ -18,7 +18,7 @@ export const signup = async ({name, email, password}) => {
 
 export const login = async ({ email, password}) => {
     try {
-        const {data} = await axios.post('/api/users/login', {
+        const {data} = await axios.post('https://byteplay-backend.onrender.com/api/users/login', {
             email,
             password,
         })
@@ -37,7 +37,7 @@ export const getUserProfile = async ({token}) => {
                 Authorization: `Bearer ${token}`,
             },
         }
-        const {data} = await axios.get('/api/users/profile', config);
+        const {data} = await axios.get('https://byteplay-backend.onrender.com/api/users/profile', config);
         return data;
     }catch(error){
         if(error.response && error.response.data.message)
@@ -53,7 +53,7 @@ export const updateProfile = async ({token, userData}) => {
                 Authorization: `Bearer ${token}`,
             }
         }
-        const {data} = await axios.put('/api/users/updateProfile', userData, config)
+        const {data} = await axios.put('https://byteplay-backend.onrender.com/api/users/updateProfile', userData, config)
         return data;
     }catch(error){
         if(error.response && error.response.data.message)
@@ -72,7 +72,7 @@ export const updateProfilePicture = async ({ token, formData }) => {
       };
   
       const { data } = await axios.put(
-        "/api/users/updateProfilePicture",
+        "https://byteplay-backend.onrender.com/api/users/updateProfilePicture",
         formData,
         config
       );
