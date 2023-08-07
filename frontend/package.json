@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "proxy": "https://byteplay-backend.onrender.com",
+
   "engines": {
     "node": ">=16.14",
     "npm": "8.x"

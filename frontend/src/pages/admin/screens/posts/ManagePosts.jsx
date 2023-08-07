@@ -218,7 +218,7 @@ const ManagePosts = () => {
                             Delete
                           </button>
                           <Link
-                            to={`/admin/posts/manage/edit/${post?.slug}`}
+                            to={`https://byteplay-backend.onrender.com/admin/posts/manage/edit/${post?.slug}`}
                             className="text-green-600 hover:text-green-900"
                           >
                             Edit
