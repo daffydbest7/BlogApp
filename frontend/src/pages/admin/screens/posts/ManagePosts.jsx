@@ -3,6 +3,7 @@ import { images, stables } from "../../../../constants";
 import { deletePost, getAllPosts } from "../../../../services/index/posts";
 import { useEffect, useState } from "react";
 import Pagination from "../../../../components/Pagination";
+import parseJsonToHtml from "../../../../utils/parseJsonToHtml";
 import { toast } from "react-hot-toast";
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
@@ -218,7 +219,7 @@ const ManagePosts = () => {
                             Delete
                           </button>
                           <Link
-                            to={`https://byteplay-backend.onrender.com/admin/posts/manage/edit/${post?.slug}`}
+                            to={`/admin/posts/manage/edit/${post?.slug}`}
                             className="text-green-600 hover:text-green-900"
                           >
                             Edit
@@ -229,15 +230,7 @@ const ManagePosts = () => {
                   )}
                 </tbody>
               </table>
-              {!isLoading && (
-                <Pagination
-                  onPageChange={(page) => setCurrentPage(page)}
-                  currentPage={currentPage}
-                  totalPageCount={JSON.parse(
-                    postsData?.headers?.["x-totalpagecount"]
-                  )}
-                />
-              )}
+             
             </div>
           </div>
         </div>
