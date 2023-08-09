@@ -10,14 +10,12 @@ const CTA = () => {
         <div className='col-span-12 lg:col-span-6'>
             <h2 className='text-white font-bold text-2xl md:text-center lg:text-left'> Wanna Catch Our Latest Updates And Insights? Subscribe to Our Weekly Newsletter </h2>
             <div className='w-full max-w-[494px] mt-12 space-y-4 mx-auto md:space-y-0 md:flex md:items-center md:space-x-2 lg:mx-0'>
-            <input type='text' className='focus:outline-none none px-4 py-3 rounded-lg w-full placeholder:text-black/80' placeholder='dave4bytebuster@xyz.com' />
+            <input type='text' className='focus:outline-none none px-4 py-3 rounded-lg w-full placeholder:text-black/80' placeholder='admin@byteplay.com' />
             <button className='text-white px-4 py-3 rounded-lg w-full bg-teal-700 animate-bounce md:animate-none md:w-fit md:whitespace-nowrap'>Subscribe</button>
             </div>
             
                 <p className='text-black/80 text-sm w-full px-4 py-3 mt-3 leading-7 md:text-center md:text-base lg:text-left'>
-                <span className='text-gray-200 font-semibold italic'> We'll be in touch </span> Lorem ipsum dolor sit amet consectetur
-                 adipisicing elit. Atque corporis eaque,
-                  velit nam at adipisci totam sed, 
+                <span className='text-gray-200 font-semibold italic'> We'll be in touch </span> 
                 </p>
             </div>
             <div className='hidden col-span-12 mb-[70px] md:block md:order-first lg:col-span-6 lg:order-last'>

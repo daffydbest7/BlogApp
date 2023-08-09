@@ -1,5 +1,6 @@
 import React from 'react';
 import {images} from "../constants";
+import {Link} from "react-router-dom";
 import { FaFacebook, FaGithub, FaHeartbeat, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 const Footer = () => {
@@ -7,7 +8,7 @@ const Footer = () => {
     <section className='bg-black'>
       <footer className='container mx-auto grid grid-cols-10 px-5 py-10 gap-y-10 gap-x-10 md:pt-20 md:grid-cols-12 lg:grid-cols-12'>
       <div className='col-span-5 md:col-span-4 lg:col-span-2'> 
-      <h3 className='text-gray-400 font-bold md:text-lg'>Product</h3>
+      <h3 className='text-gray-400 font-bold md:text-lg'>Easy Navigate</h3>
       <ul className='text-teal-500 text-sm mt-5 space-y-4'>
         <li>
           <a href="/"> Landing Page</a> 
@@ -16,24 +17,19 @@ const Footer = () => {
           <a href="/"> Tools</a> 
           </li>
           <li>
-          <a href="/"> Documentation</a> 
+          <a href="/"> Entertainment</a> 
           </li>
-          <li>
-          <a href="/"> Refer</a> 
-          </li>
-          <li>
-          <a href="/"> Pricing</a> 
-          </li>
+         
           <li>
           <a href="/"> Features</a> 
         </li>
       </ul>
       </div>
       <div className='col-span-5 md:col-span-4 lg:col-span-2'> 
-      <h3 className='text-gray-400 font-bold md:text-lg'>Product</h3>
+      <h3 className='text-gray-400 font-bold md:text-lg'>Services</h3>
       <ul className='text-teal-500 text-sm mt-5 space-y-4'>
         <li>
-          <a href="/"> Services</a> 
+          <a href="/">Web development</a> 
           </li>
           <li>
           <a href="/"> Design</a> 
@@ -42,18 +38,13 @@ const Footer = () => {
           <a href="/"> Research</a> 
           </li>
           <li>
-          <a href="/"> Themes</a> 
+          <a href="/"> Data Analysis</a> 
           </li>
-          <li>
-          <a href="/"> Illustrations</a> 
-          </li>
-          <li>
-          <a href="/"> Blog</a> 
-        </li>
+         
       </ul>
       </div>
       <div className='col-span-5 md:col-span-4 md:col-start-5 lg:col-span-2 '> 
-      <h3 className='text-gray-400 font-bold md:text-lg'>Product</h3>
+      <h3 className='text-gray-400 font-bold md:text-lg'>Favourites</h3>
       <ul className='text-teal-500 text-sm mt-5 space-y-4'>
         <li>
           <a href="/"> Company</a> 
@@ -68,30 +59,30 @@ const Footer = () => {
           <a href="/"> Privacy</a> 
           </li>
           <li>
-          <a href="/"> Tool</a> 
+          <a href="/"> portfolio</a> 
           </li>
       </ul>
       </div>
       <div className='col-span-5 md:col-span-4 lg:col-span-2'> 
-      <h3 className='text-gray-400 font-bold md:text-lg'>More</h3>
+      <h3 className='text-gray-400 font-bold md:text-lg'>Latest Articles</h3>
       <ul className='text-teal-500 text-sm mt-5 space-y-4'>
         <li>
-          <a href="/"> More</a> 
+          <a href="/"> Sports</a> 
           </li>
           <li>
-          <a href="/"> License</a> 
+          <a href="/">Coding </a> 
           </li>
           <li>
-          <a href="/"> Documentation</a> 
+          <a href="/"> Music</a> 
           </li>
           <li>
-          <a href="/"> Refer</a> 
+          <a href="/"> Dance</a> 
           </li>
           <li>
-          <a href="/"> Pricing</a> 
+          <a href="/"> Auditions</a> 
           </li>
           <li>
-          <a href="/"> Features</a> 
+          <a href="/"> Lifetsyle</a> 
         </li>
       </ul>
       </div>
@@ -102,21 +93,17 @@ const Footer = () => {
         </div>
         <p className='text-gray-300 text-sm text-center md:text-left md:text-base'>Make Coding fun and approachable...</p>
         <div className='flex justify-center items-center text-gray-300 space-x-4 py-8 md:justify-start'>
-          <a href="/" className='hover:text-teal-500 hover:animate-spin'><FaInstagram size={20}/></a>
-          <a href="/" className='hover:text-teal-500 hover:animate-spin'><FaGithub size={20}/></a>
-          <a href="/" className='hover:text-teal-500 hover:animate-spin'><FaFacebook size={20}/></a>
-          <a href="/" className='hover:text-teal-500 hover:animate-spin'><FaTwitter size={20}/></a>
-          <a href="/" className='hover:text-teal-500 hover:animate-spin'><FaLinkedin size={20}/></a>
+          <a href="https://www.instagram.com/daffydbest" target='_blank' className='hover:text-teal-500 hover:animate-spin'><FaInstagram size={20}/></a>
+          <a href="https://www.github.com/daffydbest7" target='_blank' className='hover:text-teal-500 hover:animate-spin'><FaGithub size={20}/></a>
+          <a href="https://www.facebook.com/daffydbest" target='_blank' className='hover:text-teal-500 hover:animate-spin'><FaFacebook size={20}/></a>
+          <a href="https://www.twitter.com/daffydbest" target='_blank' className='hover:text-teal-500 hover:animate-spin'><FaTwitter size={20}/></a>
+          <a href="www.linkedin.com/in/david-lawrence-6b2513b0" target='_blank' className='hover:text-teal-500 hover:animate-spin'><FaLinkedin size={20}/></a>
         </div>
         </div>
       </div>
-      <div className='hidden col-span-12 md:block mx-auto py-4'>
-        <div className='text-white rounded-full p-2'>
-        <FaHeartbeat size={25} className= "bg-teal-500  p-2 rounded-full mx-auto animate-spin"/>
-        </div>
-        <span className='text-gray-300 mt-4'>developedbydave @2023 </span> 
-      </div>
-     
+      
+        <span className='text-gray-300 mt-4'>developedbydave ©2023 </span> 
+      
       </footer>
     </section>
   )

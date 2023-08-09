@@ -41,7 +41,7 @@ const Articles = () => {
           ))
         )}
       </div>
-      <button className="group mx-auto flex items-center gap-x-2 font-bold border-2 border-primary px-6 py-3 rounded-lg hover:bg-teal-500 hover:text-white">
+      <button className="group mx-auto flex items-center gap-x-2 font-bold border-2 border-teal-500 px-6 py-3 rounded-lg hover:bg-teal-500 hover:text-white">
         <span>More articles</span>
         <FaArrowRight className="w-3 h-3 group-hover:rotate-90 " />
       </button>

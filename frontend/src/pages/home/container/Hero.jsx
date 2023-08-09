@@ -54,9 +54,9 @@ const Hero = () => {
         <div className='flex mt-4 flex-col lg:flex-row lg:items-start lg:flex-nowrap lg:gap-x-4 lg:mt-7'>
             <span className='text-black/90 mt-2 text-semibold italic lg:text-sm lg:mt-4 xl:text-base'> Popular Tags:</span>
             <ul className='flex flex-wrap gap-x-2.5 gap-y-2.5 mt-3 lg:text-sm xl:text-base'>
-                <li className='rounded-lg bg-teal-100 bg-0pacity-10 px-3 py-1.5 font-semibold text-teal-500'>Design</li>
-                <li className='rounded-lg bg-teal-100 bg-0pacity-10 px-3 py-1.5 font-semibold text-teal-500'>User Experience</li>
-                <li className='rounded-lg bg-teal-100 bg-0pacity-10 px-3 py-1.5 font-semibold text-teal-500'>User Interfaces</li>
+                <li className='rounded-lg bg-teal-100 bg-0pacity-10 px-3 py-1.5 font-semibold text-teal-500'>Coding</li>
+                <li className='rounded-lg bg-teal-100 bg-0pacity-10 px-3 py-1.5 font-semibold text-teal-500'>Football</li>
+                <li className='rounded-lg bg-teal-100 bg-0pacity-10 px-3 py-1.5 font-semibold text-teal-500'>Artificial Intelligence</li>
             </ul>
         </div>
       </div>
