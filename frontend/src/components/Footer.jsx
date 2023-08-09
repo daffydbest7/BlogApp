@@ -101,9 +101,9 @@ const Footer = () => {
         </div>
         </div>
       </div>
-      
-        <span className='text-gray-300 mt-4'>developedbydave ©2023 </span> 
-      
+        <div className='col-span-12 md:block mx-auto py-4'>
+        <span className='text-gray-300 text-xs md:text-sm mt-4'>developedbydave ©2023 </span> 
+        </div>
       </footer>
     </section>
   )
