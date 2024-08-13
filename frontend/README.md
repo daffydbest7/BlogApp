@@ -1,2 +1,2 @@
-blogapp frontend
+blogapp frontend 2.0
 
